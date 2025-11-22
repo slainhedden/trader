@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Market_Project"
+version = "0.1.0"
+dependencies = [
+    "pandas",
+    "python-binance",
+    "pyarrow",
+    "pytest"
+]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
